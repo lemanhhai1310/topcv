@@ -1,0 +1,59 @@
+body{
+
+}
+:root{
+
+}
+.topcv2{
+  &__name{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 32px;
+  }
+  &__chucvu{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+  }
+  &__listinfo{
+    >li{
+      font-size: 13px;
+      color: rgb(0, 0, 0);
+    }
+  }
+  &__txt1{
+    @extend .topcv2__chucvu;
+  }
+  &__txt2{
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  &__txt3{
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  &__list{
+    >li{
+      @extend .topcv2__txt1;
+    }
+  }
+  &__item{
+    $x:10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: #{$x};
+    margin-bottom: #{$x};
+    &:nth-child(n+2){
+      margin-top: #{$x};
+    }
+  }
+  &__title{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,85 @@
+$font-Montserrat: 'Montserrat', sans-serif;
+$font-Raleway: 'Raleway', sans-serif;
+:root{
+  --text-primary-color: rgb(236 143 0 / 100%);
+  --line-height-primary: 1.5;
+}
+body{
+  font-family: $font-Montserrat;
+}
+.topcv1{
+
+  &__title1{
+    font-size: 12px;
+    font-family: $font-Raleway;
+    font-weight: 700;
+    color: var(--text-primary-color);
+    line-height: var(--line-height-primary);
+  }
+  &__cardLeft{
+    padding: 25px;
+    &__name{
+      font-family: $font-Raleway;
+      font-weight: 700;
+      color: var(--text-primary-color);
+      font-size: 23px;
+      line-height: var(--line-height-primary);
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 25px;
+      }
+    }
+    &__txt{
+      font-size: 12px;
+      font-family: $font-Montserrat;
+      color: rgb(244, 244, 244);
+    }
+    &__list1{
+      >li{
+        font-family: $font-Raleway;
+        font-weight: 500;
+        font-size: 12px;
+        color: rgb(244, 244, 244);
+        text-transform: uppercase;
+      }
+    }
+    &__listInfo{
+      margin-top: 10px;
+      >li{
+        font-size: 12px;
+        font-family: $font-Montserrat;
+        color: rgb(244, 244, 244);
+        display: flex;
+        align-items: center;
+        .uk-icon{
+          color: var(--text-primary-color);
+        }
+      }
+    }
+  }
+  &__cardRight{
+    &__txt1{
+      font-family: $font-Montserrat;
+      color: rgb(0, 0, 0);
+      font-weight: 700;
+      font-size: 12px;
+    }
+    &__txt2{
+      color: rgb(0, 0, 0);
+      font-size: 12px;
+      font-family: $font-Montserrat;
+      font-weight: 600;
+    }
+    &__txt{
+      color: rgb(0, 0, 0);
+      font-size: 12px;
+      font-family: $font-Montserrat;
+    }
+    &__list{
+      >li{
+        @extend .topcv1__cardRight__txt;
+      }
+    }
+  }
+}

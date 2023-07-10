@@ -1,0 +1,73 @@
+:root {
+  --text-primary-color: rgb(236 143 0 / 100%);
+  --line-height-primary: 1.5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.topcv1__title1 {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--text-primary-color);
+  line-height: var(--line-height-primary);
+}
+.topcv1__cardLeft {
+  padding: 25px;
+}
+.topcv1__cardLeft__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--text-primary-color);
+  font-size: 23px;
+  line-height: var(--line-height-primary);
+}
+.topcv1__cardLeft__item:nth-child(n+2) {
+  margin-top: 25px;
+}
+.topcv1__cardLeft__txt {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(244, 244, 244);
+}
+.topcv1__cardLeft__list1 > li {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(244, 244, 244);
+  text-transform: uppercase;
+}
+.topcv1__cardLeft__listInfo {
+  margin-top: 10px;
+}
+.topcv1__cardLeft__listInfo > li {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(244, 244, 244);
+  display: flex;
+  align-items: center;
+}
+.topcv1__cardLeft__listInfo > li .uk-icon {
+  color: var(--text-primary-color);
+}
+.topcv1__cardRight__txt1 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 12px;
+}
+.topcv1__cardRight__txt2 {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.topcv1__cardRight__txt, .topcv1__cardRight__list > li {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=topcv1.css.map */
